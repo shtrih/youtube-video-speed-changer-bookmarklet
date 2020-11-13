@@ -1,4 +1,4 @@
-# [YouTube Video Speed Changer][1]
+# YouTube Video Speed Changer
 #### A simple Bookmarklet to change the speed of your video (or playback rate) of YouTube Videos (or any other HTML5 videos)
 
 YouTube Video Speed Changer is an utility that enable you to alter the pace of YouTube videos. Even if it was tested on YouTube,
@@ -18,19 +18,11 @@ This bookmarklet let me easily adjust the speed. I also use it for Coursera's vi
 Installation
 ------------
 
-The installation is pretty simple. It is a bookmarklet like the Pinterest's Pin It.
-
-[Their instructions](http://pinterest.com/about/goodies/) are really clear and will work also for YouTube Video Speed Changer.
-
-Unfortunately github does not let me to add a bookmarklet on this page. Use this page to install with drag and drop: http://chriscinelli.github.com/youtube-video-speed-changer-bookmarklet/
-
-Or write manually create a bookmark with this code as: 
+The installation is pretty simple. It is a [bookmarklet][wiki-definition]. Manually create a bookmark with this code in URL field: 
 ```  javascript
-   javascript:void((function(){var e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','https://raw.github.com/ChrisCinelli/youtube-video-speed-changer-bookmarklet/master/src/youtube-video-speed-changer-bookmarklet.min.js?r='+Math.random()*99999999);document.body.appendChild(e)})());)
+   javascript:void((function(){var e=document.createElement('script');e.setAttribute('src','https://shtrih.github.io/youtube-video-speed-changer-bookmarklet/src/youtube-video-speed-changer-bookmarklet.min.js');document.body.appendChild(e)})())
 ```
 
-
-Remember to enable HTML5 video on YouTube at http://www.youtube.com/html5
 
 Usage
 -----
@@ -40,7 +32,7 @@ up in the upper left corner. You can use the + or - buttons to increase or
 diminish the speed of the video.
 
 Click it again and the small speed box will disappear and the video will go back
-to normal speed.   
+to normal speed.
 
 
 Acknowledgements
@@ -50,5 +42,5 @@ Acknowledgements
 
 YouTube Video Speed Changer is authored and maintained by [Chris Cinelli][cc].
 
-[1]: http://chriscinelli.github.com/youtube-video-speed-changer-bookmarklet/
+[wiki-definition]: https://en.wikipedia.org/wiki/Bookmarklet
 [cc]: http://www.linkedin.com/in/criscinelli
