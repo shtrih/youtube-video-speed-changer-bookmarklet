@@ -63,6 +63,22 @@
       }
     }
   }
+
+  const body = $("body")[0];
+
+  //If the element is already there, then remove it. Toggle effect.
+  const oldElement = $("#" + controlId)[0];
+  if (oldElement) {
+    body.removeChild(oldElement);
+
+    //Also set back to normal the playback rate
+    if (currentVideo) {
+      currentVideo.playbackRate = 1;
+    }
+
+    return;
+  }
+
   if (!currentVideo) {
     //Ugly alert, but seriusly, do we really want to implement a nice styled modal just for this?
     alert("This page does not have any HTML5 videos or they are not reachable!");
@@ -71,16 +87,6 @@
 
   if (!currentVideo.playbackRate) {
     alert("This browser does not support changes of playback rate on HTML5 videos! Try Google Chrome!");
-    return;
-  }
-
-  const body = $("body")[0];
-
-  //If the element is already there, then remove it. Toggle effect.
-  const oldElement = $("#" + controlId)[0];
-  if (oldElement) {
-    body.removeChild(oldElement);
-    currentVideo.playbackRate = 1; //Also set back to normal the playback rate
     return;
   }
 
